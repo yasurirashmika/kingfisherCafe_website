@@ -1,0 +1,327 @@
+body{
+    background-color: white;
+    margin: 0px;
+
+}
+.header .menubar{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(51,50,50);
+    position: fixed;
+}
+.header .menubar .name{
+    position: absolute;
+    left: 120px;
+    top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color:goldenrod;
+}
+.header .menubar img{
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    float: left;
+}
+.header .menubar ul{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+}
+
+.header .menubar ul li{
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.header .menubar ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.header .active, .header .menubar ul li:hover{
+    background-color: rgb(16, 194, 25);
+    border-radius: 5px;
+}
+
+
+
+
+                                                                                       
+
+
+
+
+
+
+
+
+.home{
+    padding-top: 150px;
+    background-image: url("img/food.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    background-size: 100% 600px;
+    margin-top: 0px;
+    
+}
+
+.home .text{
+    position: static;
+    padding-left: 30px;
+}
+.home .text .line1{
+    font-style: italic;
+    font-size: 40px;
+    color: white;
+    padding-top: 150px;
+}
+
+.home .text .line2{
+    font-weight: bolder;
+    font-size: 67px;
+    text-shadow: 2px 2px 5px rgb(190, 189, 177);
+    color: rgb(51,50,50);
+    font-style: italic;
+}
+.home .text .line3{
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(51,50,50);
+}
+.home .text button{
+    margin-top: 40px;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    background-color: rgb(51, 50, 50);
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.home .text button:hover{
+    border: 2px solid black;
+}
+
+
+
+.flex-container{
+    margin-top: -75px;
+    display: flex;
+    background-color: rgb(51,50,50);
+    justify-content: space-around;
+}
+.flex-container > div{
+    background-color: rgb(39,33,33,0.6);
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+}
+.flex-container .vacancy{
+    background-color: wheat;
+}
+
+.flex-container .vacancy h2{
+    text-align: center;
+    color: rgb(51,50,50);
+    background-color: burlywood;
+    height: 70px;
+    margin-top: 0px;
+    padding-top: 25px;
+}
+.flex-container .vacancy h2 span{
+    color: #E16428;
+    text-transform: uppercase;
+}
+.flex-container .vacancy img{
+    float: left;
+    width: 50%;
+    height: 205px;
+    margin-top: -20px;
+}
+.flex-container .vacancy button{
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+.flex-container .toppicks h2{
+    text-align: center;
+    color: white;
+}
+.flex-container .toppicks .slides{
+    display: none;
+}
+.flex-container .toppicks .slides img{
+    width: 400px;
+    height: 200px;
+}
+.active {
+    background-color: #717171;
+  }
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-iteration-count: 10;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+
+
+
+
+
+
+
+.features h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.features .box-container{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.features .box-container .box{
+    background-color: burlywood;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 20px;
+    border: 2px solid goldenrod;
+    margin-bottom: 50px;
+}
+
+.features .box-container .box:hover{
+    border: 1px solid black;
+
+    
+}
+
+.features .box-container .box img{
+    width: 100px;
+    height: 100px;
+    margin: auto 100px;
+    
+}
+
+.features .box-container .box h3{
+    text-align: center;
+    font-size: 30px;
+    color: #E16428;
+    font-weight: bold;
+    
+}
+
+.features .box-container .box p{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 260px;
+    color: goldenrod;
+    font-size: 16px;
+    line-height: 18px;
+    background: linear-gradient(to right,black,rgb(54, 14, 90));
+}
+
+.footer .row{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+}
+.footer .row .col{
+    padding: 10px;
+
+}
+.footer .row .col ul{
+    list-style: none;
+}
+
+.footer .row .col ul li{
+    margin-bottom: 10px;
+}
+
+.footer .row .col ul li a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer .row .col ul li a:hover{
+    font-weight: bold;
+}
+
+.footer .row .col h3{
+    margin-bottom: 10px;
+}
+
+.footer .row .col p{
+    text-align: justify;
+}
+
+.footer .contact p img{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding-top: 0px;
+    
+}
+.footer .social-media {
+    margin-top: 30px;
+}
+
+.footer .social-media a img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.footer p{
+    margin-left: 10px; 
+    font-style: italic;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+

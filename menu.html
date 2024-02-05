@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+        <script src="menu.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="menubar">
+                <img src="img/dish.png">
+                <div class="name">kingfisher<br>Cafe</div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li class="active"><a href="#">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+        </header>
+        
+
+        <div class="box-container">
+            <div class="box1">
+                <img src="img/food1.jpg" height="150px" width="100%">
+                <p>Pizza</p>
+                <p class="price">LKR 830.00</p>
+                <span>quantity</span><input type="number" id="que1" value="1">
+                <button onclick="mycart('food1')" id="food1">Add to cart</button>
+            </div>
+            <div class="box2">
+                <img src="img/food2.jpg" height="150px" width="100%">
+                <p>Classic Potato Chips Lay's</p>
+                <p class="price">LKR 800.00</p>
+                <span>quantity</span><input type="number" id="que2" value="1">
+                <button onclick="mycart('food2')" id="food2">Add to cart</button>
+            
+            </div>
+            <div class="box3">
+                <img src="img/food3.jpg" height="150px" width="100%">
+                <p>Ribeye Steak</p>
+                <p class="price">LKR 650.00</p>              
+                <span>quantity</span><input type="number" id="que3" value="1">
+                <button onclick="mycart('food3')" id="food3">Add to cart</button>
+
+            </div>
+            <div class="box4">
+                <img src="img/food4.jpg" height="150px" width="100%">
+                <p>Crispy Chicken Bucket</p>  
+                <p class="price">LKR 1200.00</p>              
+                <span>quantity</span><input type="number" id="que4" value="1">
+                <button onclick="mycart('food4')" id="food4">Add to cart</button>
+    
+            </div>
+            <div class="box5">
+                <img src="img/food5.jpg" height="150px" width="100%">
+                <p>Tandoori chicken</p>
+                <p class="price">LKR 780.00</p>              
+                <span>quantity</span><input type="number" id="que5" value="1">
+                <button onclick="mycart('food5')" id="food5">Add to cart</button>
+    
+            </div>
+            <div class="box6">
+                <img src="img/food6.jpg" height="150px" width="100%">
+                <p>Vegan Indian Tofu Tikka Masala</p>
+                <p class="price">LKR 660.00</p>
+                <span>quantity</span><input type="number" id="que6" value="1">
+                <button onclick="mycart('food6')" id="food6">Add to cart</button>
+
+            </div>
+            <div class="box7">
+                <img src="img/food7.jpg" height="150px" width="100%">
+                <p>Gobi Paratha</p>       
+                <p class="price">LKR 450.00</p>         
+                <span>quantity</span><input type="number" id="que7" value="1">
+                <button onclick="mycart('food7')" id="food7">Add to cart</button>
+            </div>
+            <div class="box8">
+                <img src="img/food8.jpg" height="150px" width="100%">
+                <p>Prawn malai curry</p>    
+                <p class="price">LKR 899.00</p>            
+                <span>quantity</span><input type="number" id="que8" value="1">
+                <button onclick="mycart('food8')" id="food8">Add to cart</button>
+            </div>
+            <div class="box9">
+                <img src="img/food9.jpg" height="150px" width="100%">
+                <p>White Cheese & Chicken Lasagna</p> 
+                <p class="price">LKR 1250.00</p>               
+                <span>quantity</span><input type="number" id="que9" value="1">
+                <button onclick="mycart('food9')" id="food9">Add to cart</button>
+            </div>
+            <div class="box10">
+                <img src="img/food10.jpg" height="150px" width="100%">
+                <p>Cheese Pasta</p>     
+                <p class="price">LKR 860.00</p><br>           
+                <span>quantity</span><input type="number" id="que10" value="1">
+                <button onclick="mycart('food10')" id="food10">Add to cart</button>
+            </div>
+            <div class="box11">
+                <img src="img/food11.jpg" height="150px" width="100%">
+                <p>Algerienne Fish</p>   
+                <p class="price">LKR 990.00</p>            
+                <span>quantity</span><input type="number" id="que11" value="1">
+                <button onclick="mycart('food11')" id="food11">Add to cart</button>
+            </div>
+            <div class="box12">
+                <img src="img/food12.jpg" height="150px" width="100%">
+                <p>Prawn Fried Rice</p>   
+                <p class="price">LKR 560.00</p>             
+                <span>quantity</span><input type="number" id="que12" value="1">
+                <button onclick="mycart('food12')" id="food12">Add to cart</button>
+            </div>
+        </div>
+
+        <!--cart-->
+        <div class="cart">
+            <div class="title">CART</div>
+            <hr color="red">
+            <form>
+                food1 <input type="text" id="demo1"><br>
+                food2 <input type="text" id="demo2"><br>
+                food3 <input type="text" id="demo3"><br>
+                food4 <input type="text" id="demo4"><br>
+                food5 <input type="text" id="demo5"><br>
+                food6 <input type="text" id="demo6"><br>
+                food7 <input type="text" id="demo7"><br>
+                food8 <input type="text" id="demo8"><br>
+                food9 <input type="text" id="demo9"><br>
+                food10 <input type="text" id="demo10"><br>
+                food11 <input type="text" id="demo11"><br>
+                food12 <input type="text" id="demo12"><br>
+                Total  <input type="text" id="demo8"><br>
+                <input type="submit" value="Purchase" id="pur">
+                <button onclick="world()">Reset</button>
+            </form>
+        </div>
+
+
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">
+                    <h3>About Us</h3>
+                </div>
+                
+                <div class="col">
+                    <h3> Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Order</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact Info</h3>
+                    <div class="contact">
+                        <p><img src="img/p3.jpeg"> Kingfisher Cafe,New Kandy Road,Malabe.</p>
+                        <p><img src="img/p2.jpeg"> +94 11 6544 801</p>
+                        <p><img src="img/p1.jpeg"> kingfisher@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Follow us</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/"><img src="img/facebook.png"></a>
+                        <a href="https://www.instagram.com/"><img src="img/instagram.png"></a>
+                        <a href="https://www.twitter.com/"><img src="img/twitter.png"></a>
+                        <a href="https://www.youtube.com/"><img src="img/youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <hr color="white" width="95%">
+            <p>@copyright2022 | Designed by Group 10</p>
+        </footer>
+    </body>
+</html>

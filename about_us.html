@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .header .menubar{
+                width: 100%;
+                height: 100px;
+                background-color: rgb(51,50,50);
+                position: fixed;
+                
+            }
+            .header .menubar .name{
+                position: absolute;
+                left: 120px;
+                top: 15px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-style: italic;
+                color:goldenrod;
+            }
+            .header .menubar img{
+                width: 100px;
+                height: 80px;
+                margin: 10px;
+                float: left;
+            }
+            .header .menubar ul{
+                display: inline-flex;
+                list-style: none;
+                float: right;
+            }
+            
+            .header .menubar ul li{
+                padding: 15px;
+                margin-right: 50px;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            
+            
+            .header .menubar ul li a{
+                text-decoration: none;
+                color: white;
+            
+            }
+            
+            .header .active, .header .menubar ul li:hover{
+                background-color: rgb(16, 194, 25);
+                border-radius: 5px;
+            }
+            .mid{
+                padding-top: 100px;
+                background-image: url("img/food.jpg");
+                background-position: center;
+                width: 100%;
+                height: 200px;
+            }
+            .mid .title{
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                font-style: italic;
+                color: goldenrod;
+                padding-top: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header section-->
+        <header class="header">
+            <div class="menubar">
+                <img src="img/dish.png">
+                <div class="name">kingfisher<br>Cafe</div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="#">About us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="mid">
+            <div class="title">About us</div>
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum porro error fugit ipsa, fugiat dolores? Officia laudantium nemo numquam repellendus quidem? Aliquam eum veniam nostrum numquam culpa quam inventore quisquam.</p>
+        </div>
+    </body>
+</html>
